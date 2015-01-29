@@ -9,11 +9,10 @@ public class Sorting {
 		while((line = in.readLine())!= null)
 		{
 			a1.clear();
-			StringTokenizer st = new StringTokenizer(line);
-			while( st.hasMoreTokens())
-			{
-				a1.add(Integer.parseInt(st.nextToken()));
-			}
+			String[] st = line.split("\\s");
+			for( String elem : st)
+				a1.add( Integer.parseInt(elem) );
+			
 			Collections.sort(a1);
 			boolean found = false;
 			for(int i = 0; i < a1.size() && !found; ++i){
