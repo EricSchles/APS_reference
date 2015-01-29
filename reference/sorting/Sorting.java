@@ -4,7 +4,7 @@ import java.util.*;
 public class Sorting {
 	public static void main(String[] args) throws Exception{
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		String lin;
+		String line;
 		ArrayList<Integer> a1 = new ArrayList<Integer>(1100000);
 		while((line = in.readLine())!= null)
 		{
