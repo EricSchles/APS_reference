@@ -2,6 +2,9 @@ import java.io.*;
 import java.util.*;
 
 public class Sorting {
+	public static <T> void print(T input){
+		System.out.println(input);
+	}
 	public static void main(String[] args) throws Exception{
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		String line;
@@ -13,12 +16,16 @@ public class Sorting {
 			for( String elem : st)
 				a1.add( Integer.parseInt(elem) );
 			
+
 			Collections.sort(a1);
 			boolean found = false;
 			for(int i = 0; i < a1.size() && !found; ++i){
-				if(a1.get(i) != i+1)
+				//checks if the numbers are incremented by one
+				// if any number is missing prints out the index of that number
+				//after sorting
+				if(a1.get(i) != i+1) 
 				{
-					System.out.println(i+1);
+					print(i+1);
 					found = true;
 				}
 			}
