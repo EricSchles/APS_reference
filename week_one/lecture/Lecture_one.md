@@ -9,6 +9,7 @@ Welcome to Algorithmic Problem Solving!
 * Slavery Researcher @ NYU
 * Developer Evangelist @ Syncano - if curious: syncano.com
 
+My Email: es3066@nyu.edu
 My Github - www.github.com/EricSchles
 
 ##About the course
