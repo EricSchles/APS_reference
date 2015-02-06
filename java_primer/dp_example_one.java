@@ -1,4 +1,4 @@
-public class Optimizing {
+public class dp_example_one {
 
 public static long binomial(int n, int k){
     if (k == 0) return 1;
