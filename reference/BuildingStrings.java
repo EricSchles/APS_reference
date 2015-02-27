@@ -13,9 +13,10 @@ class BuildingStrings{
 	s.append("Hello there");
 	s.append("I am a string builder");
 	s.append("time to use me appropriately");
-	for(int i =0; i< 1000000;i++)
+	for(int i =0; i< 100000;i++)
 	    s.append("a"+i);
 	print(s);
+       
     }
 
 }
