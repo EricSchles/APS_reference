@@ -15,7 +15,7 @@ public class recursive_sum{
 	}
 	return T;
     }
-    /*public static int recursive_sum(int k,int n){
+    public static long recursive_sum(int k,int n){
 	if(k == 0){
 	    return n;
 	}
@@ -25,7 +25,7 @@ public class recursive_sum{
 	}
 	return sum;
     }
-    */
+    
     public static void main(String[] args) throws Exception{
 	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	long[][] T = precal();
@@ -38,6 +38,8 @@ public class recursive_sum{
 	    String[] ints = line.split("\\s");
 	    k = Integer.parseInt(ints[0]);
 	    n = Integer.parseInt(ints[1]);
+	    long sum = recursive_sum(k,n);
+	    System.out.println(""+sum);
 	    System.out.println(""+T[k][n]);
 	}
     }
